@@ -7,13 +7,11 @@
 <div>
   <ul class="cards">
     <% @areas.each do |area| %>
-    <li class="card" style="background-image: url('<%#= cl_image_path area.photo.key %>')">
-      <h2><%#= link_to area.name, area %></h2>
-    </li>
     <li class="card-product">
-      <img src="<%#= cl_image_path area.photo.key %>" />
+      <img src="<%= cl_image_path area.photo.key %>" />
       <div class="card-product-infos">
         <h2><%= link_to area.name, area %></h2>
+        <p><%= @area.description %></p>
         <p>Product description with <strong>relevant info</strong> only.</p>
       </div>
     </li>

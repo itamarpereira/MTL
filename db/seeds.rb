@@ -15,14 +15,14 @@ Area.destroy_all
 puts"seeds destroyed. Creating new seeds..."
 
 #PROJECTS
-contabilidade_photo = "https://images.unsplash.com/photo-1580894906475-403276d3942d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+contabilidade_photo = "https://res.cloudinary.com/dn2gpbtwl/image/upload/v1631134557/photo-1454165804606-c3d57bc86b40_cjdvfu.jpg"
 file = URI.open(contabilidade_photo)
 filename = File.basename(URI.parse(contabilidade_photo).path)
 contabilidade = Area.new(name: "Contabilidade", description: 'Criar descrição...')
 contabilidade.photo.attach(io: file, filename: filename)
 contabilidade.save
 
-estrutura_photo = "https://images.unsplash.com/photo-1580894906475-403276d3942d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+estrutura_photo = "https://res.cloudinary.com/dn2gpbtwl/image/upload/v1631134242/photo-1581094376368-ae9f64e15985_eaofla.jpg"
 file = URI.open(estrutura_photo)
 filename = File.basename(URI.parse(estrutura_photo).path)
 estrutura = Area.new(name: "Reforma e Recuperação Estrutural", description: 'Criar descrição...')
@@ -30,14 +30,14 @@ estrutura.photo.attach(io: file, filename: filename)
 estrutura.save
 
 
-projeto_photo = "https://images.unsplash.com/photo-1580894906475-403276d3942d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+projeto_photo = "https://res.cloudinary.com/dn2gpbtwl/image/upload/v1631134079/photo-1581093196867-ca3dba3c721b_uv7f8j.jpg"
 file = URI.open(projeto_photo)
 filename = File.basename(URI.parse(projeto_photo).path)
 projeto = Area.new(name: "Projetos Arquitetônicos e Estruturais", description: 'Criar descrição...')
 projeto.photo.attach(io: file, filename: filename)
 projeto.save
 
-solar_photo = "https://images.unsplash.com/photo-1580894906475-403276d3942d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+solar_photo = "https://res.cloudinary.com/dn2gpbtwl/image/upload/v1631133907/photo-1584276433295-4b49a252e5ee_ivy3xl.jpg"
 file = URI.open(solar_photo)
 filename = File.basename(URI.parse(solar_photo).path)
 solar = Area.new(name: "Energia Solar", description: 'Criar descrição...')
