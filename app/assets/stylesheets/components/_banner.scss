@@ -1,0 +1,24 @@
+.banner {
+  width: 100%;
+  height: auto;
+  background-image: url("https://res.cloudinary.com/dn2gpbtwl/image/upload/v1592502961/metonadnkk5joxjsju8tv8f6kuoq.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 100px;
+}
+
+.container-ban {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+}
+
+.banner h1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  color: $text;
+}
